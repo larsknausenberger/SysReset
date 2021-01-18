@@ -1,0 +1,6 @@
+VAR
+	TOF_Vdc24Ok : TOF;
+	UaSYSReset_0 : UaSYSReset;
+	F_TRIG_Vdc24Ok : F_TRIG;
+	diVdc24Ok : BOOL;
+END_VAR
