@@ -2,9 +2,10 @@
 <?AutomationStudio FileVersion="4.9"?>
 <Package Version="1.00.0" xmlns="http://br-automation.co.at/AS/Package">
   <Objects>
+    <Object Type="File">readme.txt</Object>
     <Object Type="File" Description="Global data types">Global.typ</Object>
     <Object Type="File" Description="Global variables">Global.var</Object>
     <Object Type="Package" Description="Global libraries">Libraries</Object>
-    <Object Type="Program" Language="IEC">SysRst</Object>
+    <Object Type="Program" Language="IEC" Description="Controlled shutdown">SysRst</Object>
   </Objects>
 </Package>

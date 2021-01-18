@@ -1,7 +1,0 @@
-
-OPCUA_METHOD SysReset
-	ARG_INPUT
-		Delay : Int32 := UaSYSReset_0.Delay;
-		Mode : Byte := UaSYSReset_0.Mode;
-	END_ARG
-END_OPCUA_METHOD
