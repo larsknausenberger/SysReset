@@ -1,0 +1,10 @@
+
+TYPE
+	StateEnum : 
+		(
+		STATE_INIT,
+		STATE_IDLE,
+		STATE_AWAIT_FILESYS,
+		STATE_SHUTDOWN
+		);
+END_TYPE

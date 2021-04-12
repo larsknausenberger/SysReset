@@ -1,0 +1,5 @@
+VAR
+	iCmdWrite : BOOL; (*command: write to file*)
+	iSemIdent : UDINT; (*semaphore ident*)
+	iFileSystemLocked : BOOL; (*file system locked, file access no longer allowed*)
+END_VAR

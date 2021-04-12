@@ -1,0 +1,12 @@
+VAR
+	diVdc24Ok : BOOL; (*digital input: 24VDC supply OK.
+TRUE: 24VDC supply OK
+FALSE: 24VDC supply interrupted, running on buffered 24VDC.
+
+if you are using a 24VDC buffer module, such as 0PB0200.1, connect this digital input to the "Power Good" output of the buffer module. otherwise, do not connect this input.*)
+	iCmdShutdown : BOOL; (*visu command: start shutdown
+
+set this variable to TRUE to start the shutdown. variable is automatically reset by the application.*)
+	oSemIdent : UDINT; (*semaphore ident*)
+	oFileSystemLocked : BOOL; (*file system locked, file access no longer allowed*)
+END_VAR

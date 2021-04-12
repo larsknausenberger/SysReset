@@ -10,6 +10,7 @@
       <Parameter ID="HostName" Value="sysreset" />
     </Connector>
     <Parameter ID="ConfigurationID" Value="SysReset_Config1" />
+    <Parameter ID="Simulation" Value="1" />
     <Parameter ID="EthernetHostName" Value="sysreset" />
     <Parameter ID="ActivateDns" Value="1" />
     <Parameter ID="GetDnsFromDhcp" Value="2" />

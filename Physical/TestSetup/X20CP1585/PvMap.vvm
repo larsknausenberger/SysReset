@@ -1,4 +1,4 @@
-
 VAR_CONFIG
-
+	::SysRst:oSemIdent AT %Q.::HelloFile:iSemIdent; (*Insert your comment here...*)
+	::SysRst:oFileSystemLocked AT %Q.::HelloFile:iFileSystemLocked; (*Insert your comment here...*)
 END_VAR

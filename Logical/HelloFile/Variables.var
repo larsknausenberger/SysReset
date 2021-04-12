@@ -1,0 +1,10 @@
+VAR
+	fbFileClose : FileClose;
+	fbFileWrite : FileWrite;
+	fbFileOpen : FileOpen;
+	fbFileCreate : FileCreate;
+	State : StateEnum;
+	FileName : STRING[80];
+	FileDevice : STRING[80];
+	WriteData : STRING[80];
+END_VAR

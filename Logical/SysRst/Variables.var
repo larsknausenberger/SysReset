@@ -1,15 +1,19 @@
 VAR
 	TOF_Vdc24Ok : TOF; (*off-delay for "24VDC OK" signal to filter short drops in 24VDC power supply*)
 	F_TRIG_Vdc24Ok : F_TRIG; (*falling edge detection*)
-	diVdc24Ok : BOOL; (*digital input: 24VDC supply OK.
-TRUE: 24VDC supply OK
-FALSE: 24VDC supply interrupted, running on buffered 24VDC.
-
-if you are using a 24VDC buffer module, such as 0PB0200.1, connect this digital input to the "Power Good" output of the buffer module. otherwise, do not connect this input.*)
-	iCmdShutdown : BOOL; (*visu command: start shutdown
-
-set this variable to TRUE to start the shutdown. variable is automatically reset by the application.*)
 END_VAR
 VAR CONSTANT
 	VDC24_OK_OFF_DELAY : TIME := T#50ms; (*off-delay for "24VDC OK" signal to filter short drops in 24VDC power supply*)
+END_VAR
+VAR
+	fbSemCreate : SemCreate; (*creates a semaphore to block file system in case of shutdown*)
+	fbSemDelete : SemDelete; (*deletes semaphore*)
+END_VAR
+VAR CONSTANT
+	SEM_MAX_COUNT : USINT := 128; (*maximum number of times the semaphore can be acquired*)
+END_VAR
+VAR
+	fbSemGetInfo : SemGetInfo; (*gets info about semaphore*)
+	FileSystemBusy : BOOL; (*file system is busy*)
+	State : StateEnum; (*actual state in state machine*)
 END_VAR

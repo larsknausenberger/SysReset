@@ -5,6 +5,8 @@
     <Object Type="File" Description="Global data types">Global.typ</Object>
     <Object Type="File" Description="Global variables">Global.var</Object>
     <Object Type="Package" Description="Global libraries">Libraries</Object>
+    <Object Type="Program" Language="IEC" Description="Creates file devices">DevLinker</Object>
     <Object Type="Program" Language="IEC" Description="Controlled PLC shutdown">SysRst</Object>
+    <Object Type="Program" Language="IEC" Description="Example task with file handling">HelloFile</Object>
   </Objects>
 </Package>

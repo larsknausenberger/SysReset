@@ -1,0 +1,8 @@
+VAR
+	fbDevLink : DevLink; (*links file device*)
+	fbDevUnlink : DevUnlink; (*unlinks file device*)
+	fbDirCreate : DirCreate; (*creates directory*)
+END_VAR
+VAR CONSTANT
+	FILE_DEVICE_TEMP : STRING[80] := '__TEMP__'; (*name of temporary file device*)
+END_VAR
