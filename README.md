@@ -25,7 +25,7 @@ _If a 24VDC buffer module is unavailable, you may skip this section._
 2. Connect the "Power Good" signal of the power supply to a digital input
 3. Map the digital input to the PV "::SysRst:diVdc24Ok"
 4. Download the project to the target
-5. Test if the shutdown works as expected by disconnecting your 24VDC from the mains. You should see a logger entry like this:
+5. Test if the shutdown works as expected by disconnecting your 24VDC power supply from the mains. You should see a logger entry like this:
 ![Logger entry 7411](./Addon/images/logger_entry.png "Logger entry 7411")
 
 ### 2. Shutdown triggered by user
