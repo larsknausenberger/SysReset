@@ -27,7 +27,7 @@ PROGRAM _CYCLIC
 	(* 24VDC failure or command "start shutdown"? *)
 	IF F_TRIG_Vdc24Ok.Q OR iCmdShutdown THEN
 		iCmdShutdown	:= FALSE;					//reset visu command
-		SYSreset(enable := TRUE, mode := 16#11);	//start shutdown
+		SYSreset(enable := TRUE, mode := 16#11);	//start shutdown in mode 0x11: WARMSTART (no restart, only shutdown, waits for "power off", in connection with UPS)
 	END_IF
 	
 END_PROGRAM
