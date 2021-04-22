@@ -3,12 +3,12 @@
 This is a sample project to demonstrate how to execute a controlled shutdown of the PLC.
 A controlled shutdown of the PLC ensures the integrity of the file system on the CF / CFast.
 
-The sample project covers 2 use cases:
+A controlled shutdown must be triggered several seconds **before** the 24VDC supply to the PLC is cut off. This applies to the following use cases, which are both covered by this sample project:
 1. A buffer module, such as 0PB0200.1, is used to keep the 24VDC supply alive after a power failure. While running on the buffered 24VDC, the PLC shuts down in a controlled fashion.
 2. The operator triggers a controlled shutdown of the machine by pressing a button on the visualization. Then, the operator switches off the machine power supply via the main switch.
 
 ## System requirements
-- [B&R Automation Studio](https://www.br-automation.com/en/products/software/automation-software/automation-studio/) >= 4.9 
+- This project was created in [B&R Automation Studio] 4.9. The source code can be used in older versions of AS, but you may get an error when opening the project.
 - Automation runtime AR >= D4.63 or AR >= A4.73
 
 ## Getting started
@@ -36,8 +36,12 @@ _If a 24VDC buffer module is unavailable, you may skip this section._
 5. Power-cycle the CPU to restart it
 
 ## Reference
-- [24VDC buffer module 0PB0200.1](https://www.br-automation.com/en/products/accessories/power-supplies/buffer-module/0pb02001/)
+- [24VDC buffer module 0PB0200.1]
 - SYSreset() documentation. AS help GUID: be301d61-d2d3-4b74-b331-911d77756932
 
 ## License
 [MIT](https://en.wikipedia.org/wiki/MIT_License)
+
+
+[B&R Automation Studio]: https://www.br-automation.com/en/products/software/automation-software/automation-studio/
+[24VDC buffer module 0PB0200.1]: https://www.br-automation.com/en/products/accessories/power-supplies/buffer-module/0pb02001/
